@@ -368,7 +368,6 @@
     <Content Include="Content\jquery\jquery-3.5.1.js" />
     <None Include="packages.config" />
     <Content Include="Views\PartialViews\_DataTablesClientSidePartial.cshtml" />
-    <Content Include="Views\PartialViews\_CarsView.cshtml" />
     <Content Include="Views\DataTablesTest\DataTablesServerSideTest.cshtml" />
     <Content Include="Views\PartialViews\_DataTablesServerSidePartial.cshtml" />
     <Content Include="Views\DataTablesTest\Index.cshtml" />
