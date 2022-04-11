@@ -1,9 +1,10 @@
 # DataTables_ClientSide_ServerSide
 Example of serverside and clientside datatables with Asp.Net MVC.
 
+<b>Client side version:</b>
 
-Client side version: 
 1.Request is made to MVC controller
+
 ```
 
    var jqxhr = $.get("/DataTablesTest/GetData",
@@ -24,6 +25,7 @@ Client side version:
 ```
 
 2.MVC renders html table in partial view
+
 ```
     return PartialView( "/Views/PartialViews/_DataTablesClientSidePartial.cshtml", persons );
 ```
@@ -31,14 +33,15 @@ Client side version:
 3. Partial view is returned to client and is insereted into #resultHolder.
 
 
-
-Server side version:
+<b>Server side version:</b>
 
 1. Request is made to MVC controller (DataTableServerSide_Get)
-2. DataTable (only one page) is rendered on server and returned in partial view
-  ```
-  return PartialView( "/Views/PartialViews/_DataTablesServerSidePartial.cshtml", model );
-  ```
+
+3. DataTable (only one page) is rendered on server and returned in partial view
+
+```
+return PartialView( "/Views/PartialViews/_DataTablesServerSidePartial.cshtml", model );
+```
   
   Partial view also renderes pager control using PagedListPager.
   
