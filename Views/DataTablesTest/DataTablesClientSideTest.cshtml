@@ -1,0 +1,54 @@
+﻿@{
+    ViewBag.Title = "DataTables client side";
+}
+
+
+<div class="row">
+
+
+    <button id="btnTest" onclick="doWork()" name="btnTest">Get data table</button>
+
+
+
+</div>
+<div class="row">
+    <div id="resultHolder">
+
+    </div>
+
+</div>
+<br />
+
+@section scripts {
+
+    <script>    
+
+        function doWork() {            
+
+            var jqxhr = $.get("/DataTablesTest/GetData",
+                function (data) {
+
+                    document.querySelector("#resultHolder").innerHTML = data;
+
+                    $(document).ready(function () {
+                        $("#tablePersons").DataTable();
+                    });
+
+
+                }).fail(function () {
+                    alert("error");
+                });
+
+        }
+
+
+        $(document).ready(
+            function () {
+                SetActiveLink("linkDataTablesClientsideTest");
+            }
+        );
+
+    </script>
+
+
+}

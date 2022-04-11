@@ -1,0 +1,37 @@
+﻿@{
+    ViewBag.Title = "DataTables test";
+}
+
+<div class="row">
+
+
+</div>
+<div class="row" id="resultHolder">
+    @Html.Partial("~/Views/PartialViews/_DataTablesServerSidePartial.cshtml")
+
+</div>
+
+<br />
+<br />
+<br />
+
+
+@section scripts {
+
+    <script>
+
+
+        $(document).ready(
+            function () {
+                SetActiveLink("linkDataTablesServersideTest");
+            }
+        );
+    </script>
+
+}
+
+
+
+
+
+
