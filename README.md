@@ -3,7 +3,7 @@ Example of serverside and clientside datatables with Asp.Net MVC.
 
 <b>Client side version:</b>
 
-1.Request is made to MVC controller
+1. Request is made to MVC controller
 
 ```
 
@@ -24,7 +24,7 @@ Example of serverside and clientside datatables with Asp.Net MVC.
           }
 ```
 
-2.MVC renders html table in partial view
+2. MVC renders html table in partial view
 
 ```
     return PartialView( "/Views/PartialViews/_DataTablesClientSidePartial.cshtml", persons );
